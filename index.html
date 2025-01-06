@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> GDE - Trail Running</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="gde1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div class="container">
+    <div class="main-container">
+        <div class="column-container 1">     
+            <img class="imagen-chica" src="Montaña blanco.png" alt="Montaña Blanco">
+            </div>
+        <div class="column-container 2">     
+            <h1><br><br>PROGRAMA DE ENTRENAMIENTO GDE <br> TRAIL RUNNING <br>Alumno: Martin Balliro</h1>
+            </div>
+    </div>
+    <h2>Objetivo mensual: Reconocer los pasos de subida y de bajada. </h2>
+    <h2>Fase: Adquisición. </h2>
+    <h2 id ="pageTitle"> Próxima carrera Aconcagua 90km: 2025/02/22</h2>
+    <h2 id="result"></h2>
+            
+    <div class="sub-container">
+        <h4>SEMANA 1
+            <br>Objetivo semanal: Apretar en las subidas. </br>
+        </h4>
+        <p>Entrada en calor </p>   
+        <p> 3 vueltas x 13 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video1.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video2.mp4" type="video/mp4">
+                </video>
+        </div>
+    </div>
+    <div><p> Running </p>
+    </div>
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1
+            <br> Lunes: 15 km trail Parque de Montaña. </h3>
+            <p> -3 km ágiles por senderos bajos. </p>
+            <p> -4 km, 100m fuertes x 400m suaves. </p>
+            <p> -8 km subidas al Llorón por distintos senderos. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2 
+            <br> Miércoles: 12 km trail Parque de Montaña. <h3>        
+            <p> -3 km de menor a mayor. </p>
+            <p> -3 km, 300m suave x 200m fuerte donde toque. </p>
+            <p> -6 km, 4' subiendo fuertes y bajadas controladas + 4' subidas suavs y bajadas fuertes. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3
+            <br> Viernes: 20 km trail mixto por los Senderos. <h3>        
+                <p> -5 km de menor a mayor. </p>
+                <p> -6 km, 2' suave x 3' ágiles. </p>
+                <p> -3 km bajas pulsaciones. </p>
+                <p> -6 km al mejor ritmo posible, senderos y calle. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 4 
+            <br> Sábado: 28 km trail Áspero + Arco + Santo Tomás. <h3>        
+                <p> -4 km de menor a mayor. </p>
+                <p> -5 km subida con trekking exigido. </p>
+                <p> -5 km, 6' trekking exigido x 3' trote firme. </p>
+                <p> -14 km buenas sensaciones . </p>
+        </div>       
+    </div>   
+    <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> - Baños de contraste (3' frio x 3' calor). </p>     
+     </div> 
+
+    <!--<div class="image-container">  
+        <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+        <source src="Video3.mp4" type="video/mp4">
+        </video>    
+    </div> -->
+    
+    <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+    </div>
+        
+    <div class="sub-container">
+        <h4>SEMANA 2
+            <br>Objetivo semanal: Sostener en la cadencia. </h4>
+            <p>Entrada en calor </p>   
+            <p> 4 vueltas x 10 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+            <source src="Video4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+            <source src="Video5.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div><p> Running </p>
+    </div>
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1
+            <br> Lunes: 14 km trail Arco. </h3>        
+            <p> -3 km de menor a mayor, aumentando cada 1 km. </p>
+            <p> -5 km, 20" ágiles x 20" suaves donde nos toque. </p>
+            <p> -3 km bajas pulsaciones. </p>
+            <p> -3 km, 2' fuertes x 2' suaves. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2 
+            <br> Miércoles: 17 km trail mixto Senderos de Chacras. </h3>        
+            <p> -3 km ágiles. </p>
+            <p> -4 km, 250m fuertes x 250m suaves. </p>
+            <p> -5 km, 30" fuertes x 30" suaves. </p>
+            <p> -3 km al mejor ritmo posible. </p>
+            <p> - 2 km buenas sensaciones. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3
+            <br> Viernes mañana: 6 km calle, 3km subida suave + 3km fuerte en bajada. </h3>        
+            <h3> Viernes tarde: 16 km trail mixto por los Senderos. </h3>
+            <p> -6 km de menor a mayor, aumentando cada 2 km. </p>
+            <p> -3 km fuertes por senderos bajos. </p>
+            <p> -7 km .al mejor ritmo posible senderos y calle.  </p>
+        </div>
+        <div class="column">
+            <h3>Dia 4 
+            <br> Sábado: 26 km trail, Cerros Baño + Ponderado + Vizcachera + Palacio. </h3>        
+            <p> -3 km de menor a mayor. </p>
+            <p> -7 km ritmo continuo en subida. </p>
+            <p> -4 km trekking exigidooo. </p>
+            <p> -12 km buenas sensaciones, tratando de correr todo. </p>
+        </div>
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> - Movilidad de cadera bipodal (2 veces x 2'). </p>     
+    </div> 
+    
+  <!-->  <div class="image-container">  
+    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+        <source src="Video6.mp4" type="video/mp4">
+        </video>    
+    </div>-->
+          
+    <div id="column-container 2">
+    <canvas id="myChart-line-2"></canvas>
+    </div>      
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
